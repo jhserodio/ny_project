@@ -1,0 +1,186 @@
+<section class="product-np">
+  
+  <div class="product-gallery" id="product-gallery-slide">
+    {%- assign featured_img_src = current_variant.featured_image.src | default: product.featured_image.src -%}
+    {%- assign featured_img_alt = current_variant.featured_image.alt | default: product.featured_image.alt -%}
+    <div class="product-gallery-images">
+      {% for image in product.images %}
+        <div class="gallery-item">
+          <div class="gallery-item-image">
+            <img src="{{ image.src | product_img_url: 'master' }}"
+            <img src="{{ featured_img_src | img_url: product_image_size, scale: product_image_scale }}" alt="{{ featured_img_alt }}" id="FeaturedImage-{{ section.id }}">
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+    <button class="gallery-nav left reset" value="+" id="product-gallery-prev">
+      <svg class="icon icon-banner-left">
+        <path class="path1" d="M23.72 32l-16-16 16-16 0.56 0.52-15.48 15.48 15.48 15.48z"></path>
+      </svg>
+    </button>
+
+    <button class="gallery-nav rigth reset" value="-" id="product-gallery-next">
+      <svg class="icon icon-banner-right">
+        <path class="path1" d="M8.28 32l16-16-16-16-0.56 0.52 15.48 15.48-15.48 15.48z"></path>  
+      </svg>
+    </button>
+  </div>
+  <div class="container">
+    <br>
+    <div class="bread-crumb">
+      <ul class="menu">
+        <li><a href="#">nayp</a></li>
+        <li><span class="divider">/</span></li>
+        <li><a href="#">man T-shirt</a></li>
+        <li><span class="divider">/</span></li>
+        <li><a href="#">nome do produto</a></li>
+      </ul>
+    </div>
+
+    <div class="product-item">
+
+      <div class="product-options">
+        <div class="options-info">
+          <h1 class="title-base">
+            {{ product.title }}
+          </h1>
+          <p class="price">
+            <span class="price-old">R$ {{ product.price_max }} </span>
+            <span>R$ {{ product.price_min }}</span>
+          </p>
+        </div>
+        <div class="options-select">
+          <form id="np-product-variants">
+            {% for option in product.options_with_values %}
+              <div class="form_control">
+                <select name="{{ option.name }}">
+                  <option value="">
+                    {{ option.name }}
+                  </option>
+                  {% for value in option.values %}
+                    <option value="{{ value | escape }}">
+                      {{ value }}
+                  	</option>
+                  {% endfor %}
+                </select>
+              </div>
+            {% endfor %}
+          </form>
+        </div>
+        <div class="options-finish">
+          <button
+            class="btn-seller"
+            id="ny-product-add-to-cart"
+            value="{{ product.variants[0].id }}">
+            ADD TO CART
+          </button>
+        </div>
+      </div>
+
+      <div class="product-details">
+        <p>
+          {{ product.description }}
+        </p>
+    </div>
+
+    <div class="product-actions">
+      <button> size guide </button>
+      <button class="btn"> shipping </button>
+      <button class="btn" id="active-product-social"> share </button>
+      <div class="social-list" id="product-social">
+        <ul class="menu">
+          <li>
+            <a href="#">
+              <svg class="icon _large icon-facebook">
+                <use xlink:href="public/svg/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <svg class="icon _large icon-twitter">
+                <use xlink:href="public/svg/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <svg class="icon _large icon-instagram">
+                <use xlink:href="public/svg/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <svg class="icon _large icon-pinterest">
+                <use xlink:href="public/svg/icons.svg#icon-pinterest"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+{% schema %}
+  {
+    "name": "Product pages",
+    "settings": [
+      {
+        "type": "select",
+        "id": "image_size",
+        "label": "Image size",
+        "options": [
+          {
+            "value": "small",
+            "label": "Small"
+          },
+          {
+            "value": "medium",
+            "label": "Medium"
+          },
+          {
+            "value": "large",
+            "label": "Large"
+          },
+          {
+            "value": "full",
+            "label": "Full-width"
+          }
+        ],
+        "default": "medium"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_quantity_selector",
+        "label": "Show quantity selector",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "show_variant_labels",
+        "label": "Show variant labels",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "show_vendor",
+        "label": "Show vendor",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_zoom",
+        "label": "Enable image zoom",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "show_share_buttons",
+        "label": "Show social sharing buttons",
+        "default": true
+      }
+    ]
+  }
+{% endschema %}

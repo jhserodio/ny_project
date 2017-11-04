@@ -1,0 +1,13 @@
+/*=========================================================================
+PAGES
+=========================================================================*/
+
+/*CATEGORY*/
+@import 'category/category';
+
+/*PRODUCT*/
+@import 'product/product';
+@import 'product/product-gallery';
+
+/*INFO*/
+@import 'info/info';

@@ -1,0 +1,12 @@
+@custom-selector :--alerts .alert-error, .alert-info, .alert-success, .alert-warning;
+
+:--alerts {
+  display: none;
+  margin: 0;
+  font-size: 9px;
+  text-transform: uppercase;
+}
+
+.alert-error {
+  color: var(--error-color) !important;
+}

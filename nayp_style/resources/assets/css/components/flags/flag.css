@@ -1,0 +1,28 @@
+/*=========================================================================
+02/L - FLAG
+=========================================================================*/
+
+@custom-selector :--flags .flag, .flag-white;
+
+:--flags {
+  height     : 100%;
+  width      : auto;
+  display    : flex;
+  justify-content: space-between;
+  align-items: center;
+  position   : relative;
+  text-align : center;
+}
+
+.flag {
+  background : var(--gray-base);
+}
+
+.flag-white {
+  background : white;
+}
+
+:--flags button,
+:--flags p {
+  color: black;
+}

@@ -1,0 +1,30 @@
+/*=========================================================================
+01/F - LISTS
+=========================================================================*/
+
+:--list {
+  margin       : 0;
+  padding-left : calc(var(--space-base)*2);
+}
+
+:--list :--list  {
+  margin : var(--space-large) 0;
+}
+
+li {
+  margin : calc(var(--space-base)/2) 0;
+}
+
+dl {
+  margin  : 0;
+  padding : 0;
+}
+
+dt {
+  margin : var(--space-large) 0;
+}
+
+dd {
+  margin       : var(--space-base) 0;
+  padding-left : calc(var(--space-large)*3);
+}

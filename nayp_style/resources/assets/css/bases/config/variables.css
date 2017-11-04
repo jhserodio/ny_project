@@ -1,0 +1,93 @@
+/*=========================================================================
+01/A - VARIABLES
+=========================================================================*/
+
+:root {
+
+/*COLOR VARIABLES*/
+
+  /*colors brand*/
+  --brand-color : #000000;
+
+  /*colors gray-scale */
+  --gray-base   : #666666;
+  --gray-dark   : #333333;
+  --gray-light  : #b7b7b6;
+  --gray-nude   : #dfdfdf;
+
+  /*colors opacity*/
+  --half-black  : color(black alpha(-75%));
+  --half-white  : color(white alpha(-75%));
+  --glass-black : color(black alpha(-90%));
+  --glass-white : color(white alpha(-90%));
+  --smoke-black : color(black alpha(-35%));
+  --smoke-white : color(white alpha(-35%));
+
+  /*user colors*/
+  --error-color   : #990000;
+  --alert-color   : #999900;
+  --info-color    : #006699;
+  --success-color : #009900;
+
+  /*text colors*/
+  --color-base  : #FFFFFF;
+  --color-other : #000000;
+
+
+/*FONTS VARIABLES*/
+
+  /*font family*/
+  --font-base :  Arial, Helvetica, sans-serif;
+
+  /*font size*/
+  --size-base    : 1em;
+  --size-default : 13px;
+  --size-title   : 18px;
+  --size-min     : 10px;
+  --size-large   : 1.5em;
+  --size-small   : 0.8em;
+  --size-icon    : 36px;
+
+  /*font line-height*/
+  --line-base    : 1.4em;
+  --line-small   : 1.2em;
+  --line-default : 20px;
+  --line-large   : 2em;
+
+  /*font weight*/
+  --weight-base : normal;
+  --weight-bold : bold;
+
+  /*font letter-spacing*/
+  --more-spacing : 0.02em;
+
+
+/*MEASURE VARIABLES */
+
+  /*measure margins and paddings*/
+  --space-base  : 10px;
+  --space-large : 15px;
+  --space-small : 1px;
+  --gutter      : 20px;
+
+  /*measure screens*/
+  --width-base   : 88%;
+  --width-tablet : 768px;
+  --total-width  : 100%;
+
+
+/*EFFECT VARIABLES*/
+
+  /*effect borders*/
+  --border-base     : 1px solid white;
+  --border-focus    : 1px solid black;
+  --border-form     : 1px solid var(--gray-base);
+  --border-disabled : 1px solid var(--gray-dark);
+
+  /*effect radius*/
+  --radius-base  : 0;
+
+  /*effect transition*/
+  --transition-base  : 0.2s all ease;
+  --transition-large : 0.4s all ease;
+}

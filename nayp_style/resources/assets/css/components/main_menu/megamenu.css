@@ -1,0 +1,160 @@
+.megamenu  {
+  position: absolute;
+  top: 90px;
+  left: 0;
+  display: flex;
+  background: white;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  transition: var(--transition-large);
+  max-height: 0;
+  opacity: 0;
+  z-index: 999;
+}
+
+.megamenu.active {
+  max-height: none;
+  opacity: 1;
+  min-width: 100%;
+  overflow: visible;
+}
+
+.megamenu a:hover {
+  text-decoration: underline;
+}
+
+.megamenu a {
+  color: black;
+  font-size: var(--size-min);
+  text-transform: uppercase;
+}
+
+.megamenu .menu {
+  width: 100%;
+}
+
+.megamenu .menu > li {
+  text-align: left;
+  width: 100%;
+}
+
+.megamenu.reset {
+  background: white;
+}
+
+.megamenu svg {
+  fill: black;
+}
+
+@media (--screen-small) {
+  .megamenu {
+    top: 120px;
+  }
+}
+
+@media (--screen-medium) {
+
+  .megamenu {
+    background: linear-gradient(to bottom, white 42px, var(--gray-light) 42px);
+  }
+
+  .app-navegation {
+    max-height: none;
+    opacity: 0.8;
+  }
+
+  .megamenu .menu {
+    display: flex;
+    padding: calc(var(--space-large)*2);
+    padding-top: var(--space-base);
+    padding-left: 0;
+  }
+
+  .megamenu .menu-info {
+    padding: var(--space-base) !important;
+  }
+
+  .megamenu .menu > li {
+    width: 50%;
+  }
+
+  .megamenu .btn-icon {
+    display: none;
+  }
+
+  .megamenu .menu-info li {
+    text-align: center;
+  }
+
+  .megamenu .menu > li:nth-child(1) .dropdown,
+  .megamenu .menu > li:nth-child(2) .dropdown {
+    column-count: 2;
+    width: 70%;
+  }
+
+}
+
+@media (--screen-mobile) {
+
+  .megamenu {
+    background: none;
+  }
+
+  .megamenu .menu {
+    line-height: 0;
+    background: white;
+  }
+
+  .megamenu .container {
+    width: 100%;
+    min-width: 100%;
+    margin: 0;
+  }
+
+  .megamenu .menu > li {
+    background: white;
+    margin: 0;
+    height: 40px;
+  }
+
+  .megamenu li:last-child {
+    margin-bottom: 0;
+  }
+
+  .megamenu .menu {
+    transition: all 0.25s;
+    transition-timing-function: cubic-bezier(0.20,0.20,0.05,0.05);
+  }
+
+  .megamenu .menu.inactive {
+    margin-left: 100%;
+  }
+
+  .megamenu .btn-dropdown {
+    display: block;
+    width: 40px;
+    height: 40px;
+  }
+
+  .megamenu .btn-dropdown svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .megamenu .btn-dropdown:--over {
+    color: black;
+  }
+
+  .megamenu .menu a {
+    height: 100%;
+    line-height: normal;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    padding-left: 6%;
+    box-sizing: border-box;
+  }
+
+}

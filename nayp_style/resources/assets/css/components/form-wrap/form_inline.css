@@ -1,0 +1,26 @@
+.form_inline {
+  display : block;
+  width   : 100%;
+  height  : auto;
+  margin  : calc(var(--space-base)*2) 0;
+}
+
+.form_inline > * {
+  display: inline-block;
+  width: auto;
+}
+
+.form_inline .form_control {
+  display : inline-block;
+  width   : auto;
+  height  : auto;
+  margin  : 0 var(--space-base);
+}
+
+.form_inline .form_control:first-child {
+  margin-left : 0;
+}
+
+.form_inline .form_control:last-child {
+  margin-right : 0;
+}

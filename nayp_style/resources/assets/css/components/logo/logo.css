@@ -1,0 +1,16 @@
+.logo-np {
+  color: white;
+  margin: 0;
+  height: 50px;
+  overflow: hidden;
+  width: auto;
+}
+
+.logo-np a {
+  text-decoration: none;
+}
+
+.logo-np img {
+  height: 100%;
+  width: auto;
+}

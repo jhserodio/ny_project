@@ -1,0 +1,15 @@
+/*=========================================================================
+  STYLEGUIDE FRAMEWORK
+=========================================================================*/
+
+/*BASES*/
+@import 'bases/bases';
+
+/*COMPONENTS*/
+@import 'components/components';
+
+/*PAGES*/
+@import 'pages/pages';
+
+/*TEMPLATES*/
+@import 'templates/templates';

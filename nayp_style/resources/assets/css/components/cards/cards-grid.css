@@ -1,0 +1,48 @@
+@custom-selector :--grids .card-single, .card-double, .card-triple, .card-four, .card-grid, .card-list;
+
+.card-four .card {
+  lost-waffle   : 1/1 1 var(--space-base);
+}
+
+@media (--screen-tablet) {
+
+    .card-four .card {
+      lost-column   : 1/2 2 calc(var(--space-large)*3);
+    }
+}
+
+@media (--screen-medium) {
+
+  .card-grid .card {
+    lost-column   : 1/5 5 calc(var(--space-large)*3);
+  }
+
+  .card-grid .card-large {
+    lost-column   : 2/5 5 calc(var(--space-large)*3);
+  }
+
+  .card-four .card {
+    lost-column   : 1/4 4 calc(var(--space-large)*3);
+  }
+
+  .card-four .card-large {
+    lost-column   : 2/4 4 calc(var(--space-large)*3);
+  }
+
+  .card-triple .card {
+    lost-column   : 1/3 3 calc(var(--space-large)*3);
+  }
+
+  .card-triple .card-large {
+    lost-column   : 2/3 3 calc(var(--space-large)*3);
+  }
+
+  .card-double .card {
+    lost-waffle   : 1/2 2 calc(var(--space-large)*3);
+  }
+
+  .card-double .card-large {
+    lost-waffle   : 1/2 2 calc(var(--space-large)*3);
+  }
+
+}

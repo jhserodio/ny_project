@@ -1,0 +1,64 @@
+<div class="container">
+  <div class="category-sample" data-section-id="{{ section.id }}" >
+    <header class="category-header">
+      <h1 class="title">
+        Extension
+      </h1>
+    </header>
+    <main class="category-main">
+      <div class="card-four">
+      {% for collection in collections limit: section.blocks.size %}
+        <div class="card-large">
+          <a href="{{ collection.url }}" class="sale">
+            <div class="sale-image">
+              <div class="flex-image">
+                <img src="{{ collection.image | img_url: 'large'  }}">
+              </div>
+            </div>
+          </a>
+        </div>
+      {% endfor %} 
+      </div>
+    </main>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Extensions",
+    "class": "category-simple",
+    "max_blocks": 2,
+	"settings": [
+      {
+        "type": "collection",
+        "id": "extension",
+        "label": "Extension"
+      }
+	], 
+    "blocks": [
+      {
+        "type": "featured_collection",
+        "name": "Collection",
+        "settings": [
+          {
+            "label": "Collection",
+            "id": "collection",
+            "type": "collection"
+          }
+        ]
+      }
+    ],
+	"presets": [
+      {
+        "name": "Extension",
+        "category": "Collection"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

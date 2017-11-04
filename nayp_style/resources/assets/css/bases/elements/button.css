@@ -1,0 +1,38 @@
+/*=========================================================================
+01/E - BUTTON
+=========================================================================*/
+
+:--btn {
+  color           : var(--gray-base);
+  border-radius   : var(--radius-base);
+  font-size       : var(--size-min);
+  font-family     : var(--font-base);
+  font-weight     : normal;
+  background      : none;
+  border          : var(--border-form);
+  outline         : 0;
+  box-shadow      : none;
+  padding         : var(--space-base) calc( var(--space-base) * 2 );
+  line-height     : normal;
+  display         : inline-block;
+  text-decoration : none;
+  text-transform  : uppercase;
+  box-sizing      : border-box;
+  white-space     : nowrap;
+  transition      : var(--transition-base);
+  margin          : 0;
+  text-decoration : none;
+  cursor          : pointer; 
+}
+
+:--btn:--over {
+  color        : white;
+  outline      : none;
+  box-shadow   : none;
+  border-color : white;
+}
+
+:--btn.reset {
+  padding: 0;
+  border: 0;
+}

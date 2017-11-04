@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "eslint": "^4.9.0"
+  },
+  "dependencies": {
+    "axios": "^0.16.2"
+  }
+}

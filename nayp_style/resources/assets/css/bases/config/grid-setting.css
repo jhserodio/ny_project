@@ -1,0 +1,7 @@
+@custom-media --screen-small    (width < 768px);
+@custom-media --screen-tablet   (width >=  768px) and (width <  1140px);
+@custom-media --screen-medium   (width >=  1140px);
+@custom-media --screen-mobile   (width <  1140px);
+@custom-media --screen-smalloff (width >=  768px);
+
+@lost gutter 40px;

@@ -1,0 +1,4 @@
+.capitalize {
+  text-transform: uppercase;
+  font-size: var(--size-small);
+}

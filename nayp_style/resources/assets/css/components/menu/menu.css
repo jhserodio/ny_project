@@ -1,0 +1,26 @@
+/*=========================================================================
+02/F - MENU
+=========================================================================*/
+
+@custom-selector :--menus .menu, .menu-single, .dropdown, .menu-vertical;
+
+:--menus {
+  margin     : 0;
+  padding    : 0;
+  list-style : none;
+  display    : block;
+}
+
+.menu > li {
+  margin       : 0;
+  text-align   : center;
+  width        : auto;
+  display      : inline-block;
+  height       : auto;
+}
+
+:--menus > li a {
+  text-decoration : none;
+  display         : inline-block;
+  width           : 100%;
+}

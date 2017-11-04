@@ -1,0 +1,28 @@
+.calc-amount {
+   width: auto;
+   margin: 0;
+   display: flex;
+}
+
+.calc-amount button,
+.calc-amount input {
+  margin: 0;
+  color: white;
+  border: var(--border-form);
+  padding: 0 calc(var(--space-base)/2);
+  line-height: 0;
+  font-size: var(--size-min);
+  height: 20px;
+}
+
+.calc-amount button {
+  width: 20px;
+}
+
+.calc-amount input {
+  width: 40px;
+  font-weight: var(--weight-bold);
+  text-align: center;
+  border-left: 0;
+  border-right: 0;
+}

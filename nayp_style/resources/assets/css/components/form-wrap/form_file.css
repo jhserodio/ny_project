@@ -1,0 +1,67 @@
+.form_file {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-base) 0;
+  font-size: var(--size-min);
+  text-transform: uppercase;
+  position: relative;
+}
+
+.form_file .file_descript {
+  max-width: 60%;
+}
+
+.form_file ._box {
+  position: absolute;
+  top: calc(var(--space-small)*4);
+  left: 0;
+  width: 400px;
+  height: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--gray-nude);
+  border: var(--border-form);
+  transition: opacity 0.2s ease;
+}
+
+.form_file ._box._hide {
+  opacity: 0;
+  max-height: 0;
+  padding: 0;
+}
+
+.form_file ._box._show {
+  opacity: 1;
+  max-height: none;
+  padding: calc(var(--space-base)*2);
+  padding-left: 0;
+  border: none;
+  justify-content: flex-start;
+}
+
+@media (--screen-mobile) {
+  .form_file {
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    margin: var(--space-base) 0;
+    position: inherit;
+  }
+
+  .form_file .file_descript {
+    margin-top: var(--space-base);
+    width: 100%;
+    max-width: none;
+  }
+
+  .form_file ._box {
+    position: fixed;
+    top: calc(50% - 200px);
+    left: calc(50% - 170px);
+    width: 300px;
+    height: 200px;
+    box-shadow: 0 0 10px 2px var(--half-black);
+  }
+
+}

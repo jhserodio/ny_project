@@ -1,0 +1,19 @@
+.slide-item {
+  width: 100%;
+  height: 100%;
+  background: red;
+  display: none;
+  position: relative;
+}
+
+.slide-item._active {
+  display: block;
+}
+
+.slide-item:nth-child(2) {
+  background: blue;
+}
+
+.slide-item:nth-child(3) {
+  background: green;
+}

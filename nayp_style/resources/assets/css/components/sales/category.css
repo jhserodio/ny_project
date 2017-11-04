@@ -1,0 +1,23 @@
+.category-sample {
+  width: 100%;
+  margin: calc(var(--space-large)*2) 0;
+}
+
+.category-header {
+  width: 100%;
+  display: flex;
+  padding-top: calc(var(--space-large)*2);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.category-header .title {
+  margin: 0;
+}
+
+.category-more {
+  text-align: right;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: var(--size-small);
+}

@@ -1,0 +1,34 @@
+
+.nav-main {
+  width: auto;
+  text-align: center;
+}
+
+.main-master {
+  lost-center: 100%;
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  height: 30px;
+  justify-content: center;
+  align-items: flex-end;
+  line-height: normal;
+  text-transform: uppercase;
+  font-size: var(--size-min);
+}
+
+.main-master > li {
+  margin: 0;
+  position: relative;
+}
+
+.main-master a {
+  text-decoration: none;
+}
+
+@media (--screen-smalloff) {
+  .main-master {
+      height: 50px;
+  }
+}

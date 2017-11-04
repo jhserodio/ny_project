@@ -1,0 +1,21 @@
+/*=========================================================================
+05/C - CONTAINER
+=========================================================================*/
+
+.container {
+  max-width: var(--width-base);
+  width: var(--width-base);
+  margin: 0 auto;
+}
+
+
+.container.reset::before,
+.container.reset::after {
+  display: none;
+}
+
+@media (--screen-tablet) {
+  .container {
+    width: var(--width-tablet);
+  }
+}

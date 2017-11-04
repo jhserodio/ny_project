@@ -1,0 +1,38 @@
+/*=========================================================================
+02/A - TITLES
+=========================================================================*/
+
+@custom-selector :--titles .titles, .title-base, .title-large, .title-small;
+
+:--titles {
+  text-align  : left;
+  font-weight : normal;
+  margin      : var(--space-base) 0;
+}
+
+.title {
+  font-size: var(--size-default);
+}
+
+.title-base {
+  font-size: var(--size-small);
+  line-height: normal;
+}
+
+.title-large {
+  font-size: var(--size-large);
+}
+
+.title-small {
+  font-size: var(--size-small);
+  font-weight: var(--weight-base);
+  text-transform: uppercase;
+}
+
+@media (--screen-small) {
+
+  .title-base {
+    font-size: var(--size-small);
+  }
+
+}

@@ -1,0 +1,18 @@
+.chat-button {
+  position: fixed;
+  right: 0;
+  margin-right: -43px;
+  width: 120px;
+  bottom: calc(50% - 120px);
+  border: none;
+  font-size: var(--size-small);
+  color: var(--gray-base);
+  background: var(--gray-light);
+  transform: rotate(-90deg);
+  z-index: 999;
+}
+
+.chat-button:hover {
+  color: white;
+  background: black;
+}

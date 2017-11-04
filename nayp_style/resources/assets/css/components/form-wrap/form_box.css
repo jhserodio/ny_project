@@ -1,0 +1,75 @@
+@custom-media :--form-box .form_box, .form_box ._half, .form_box ._tri;
+
+.form_box {
+  width   : 100%;
+  display : block;
+  padding : calc(var(--space-base)/2) var(--space-base);
+  border  : var(--border-form);
+  border-bottom: 0;
+  box-sizing: border-box;
+}
+
+.form_box label {
+  display : inline-block;
+  border  : none;
+  width   : auto;
+  margin-right: 20px;
+}
+
+.form_box small {
+  line-height: 0;
+}
+
+.form_box input,
+.form_box textarea {
+  display : block;
+  border  : none;
+  width   : 100%;
+  padding-left : 0;
+  color: black;
+  transition: var(--transition-base);
+}
+
+.form_box._last {
+  border-bottom: var(--border-form);
+}
+
+
+
+.form_box._error .alert-error {
+  display: inline-block;
+}
+
+.form_box._error input {
+  border-left: 5px solid var(--error-color);
+  padding-left: calc(var(--space-base)/2);
+}
+
+
+@media (--screen-medium) {
+
+  .form_box._half {
+    display: inline-block;
+    width: 50%;
+    box-sizing: border-box;
+  }
+
+  .form_box._tri {
+    display: inline-block;
+    width: 240px;
+    box-sizing: border-box;
+  }
+
+  .form_box input:focus,
+  .form_box textarea:focus {
+    border-left: 5px solid black;
+    padding-left: var(--space-base);
+  }
+
+  .form_box._half:last-child,
+  .form_box._tri:nth-child(2),
+  .form_box._tri:last-child {
+    border-left: none;
+  }
+
+}

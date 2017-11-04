@@ -1,0 +1,14 @@
+.active-menu {
+  position: relative;
+}
+
+.active-menu::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 15px;
+  z-index: 999;
+  border: 5px solid transparent;
+  border-top-color: black;
+}

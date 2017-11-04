@@ -1,0 +1,122 @@
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: white;
+}
+
+.icon._small {
+  width: .8em;
+  height: .8em;
+}
+
+.icon._large {
+  width: 1.2em;
+  height: 1.2em;
+}
+
+.icon._extra {
+  width: 1.8em;
+  height: 1.8em;
+}
+.icon._search {
+  width: 0.9285703003406525em;
+}
+
+.icon._user {
+  width: 0.785713866353035em;
+}
+
+.icon._cross {
+  width: 0.7857148498296738em;
+}
+
+.icon._tags {
+  width: 1.0597098506987095em;
+}
+
+.icon._warning {
+  width: 0.8571425080299377em;
+}
+
+.icon._info {
+  width: 0.8571425080299377em;
+}
+
+.icon._plus {
+  width: 0.785714827477932em;
+}
+
+.icon._minus {
+  width: 0.7857138440012932em;
+}
+
+.icon._error {
+  width: 0.8571425080299377em;
+}
+
+.icon._twitter {
+  width: 0.9285703301429749em;
+}
+
+.icon._facebook {
+  width: 0.5881709158420563em;
+}
+
+.icon._credit-card {
+  width: 1.0714279003441334em;
+}
+
+.icon._pinterest {
+  width: 0.8571387529373169em;
+}
+
+.icon._google-plus {
+  width: 1.285714939236641em;
+}
+
+.icon._envelope {
+  width: 1.0000021047890186em;
+}
+
+.icon._comments-o {
+  width: 1.0000030547380447em;
+}
+
+.icon._left {
+  width: 0.3750009909272194em;
+}
+
+.icon._right {
+  width: 0.3392861280590296em;
+}
+
+.icon._up {
+  width: 0.642861433327198em;
+}
+
+.icon._down {
+  width: 0.6428574100136757em;
+}
+
+.icon._reply {
+  width: 1.0000029690563679em;
+}
+
+.icon._instagram {
+  width: 0.8571425420232117em;
+}
+
+.icon._whatsapp {
+  width: 0.8571445941925049em;
+}
+
+.icon._vimeo {
+  width: 1.0078124701976776em;
+}
+
+.icon._clip {
+  width: 0.7857148349285126em;
+}

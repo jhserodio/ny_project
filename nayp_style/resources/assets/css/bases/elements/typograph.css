@@ -1,0 +1,74 @@
+/*=========================================================================
+01/D - TYPOGRAPH
+=========================================================================*/
+
+/*GLOBAL DEFINITONS*/
+
+html {
+  font-family    : var(--font-base);
+  font-weight    : normal;
+  line-height    : var(--line-default);
+  background     : black;
+  color          : var(--color-base);
+  letter-spacing : var(--more-spacing);
+}
+
+a {
+  color: var(--color-base);
+}
+
+strong {
+  font-weight : normal;
+  text-transform: uppercase;
+}
+
+small {
+  font-size : var(--size-small);
+}
+
+.divider {
+  padding: 0 calc(var(--space-base)/2);
+  font-size: var(--size-min);
+}
+
+/*TEXT DEFINITIONS*/
+p {
+  font-size   : var(--size-base);
+  line-height : var(--line-default);
+  font-weight : normal;
+}
+
+span {
+  color: var(--gray-light);
+}
+
+address {
+  font-size   : var(--size-min);
+  font-style  : normal;
+  color       : var(--gray-base);
+  font-weight : var(--weight-base);
+}
+
+time {
+  font-size : var(--size-small);
+  color     : var(--gray-light);
+}
+
+blockquote {
+  color      : var(--gray-base);
+  font-style : italic;
+  font-size  : var(--size-small);
+}
+
+/*HEADING DEFINITIONS*/
+:--heading {
+  font-weight : normal;
+  line-height : var(--line-large);
+  text-transform: uppercase;
+}
+
+@media (--screen-mobile) {
+  .divider {
+    padding: 0 calc(var(--space-large)/2);
+  }
+}

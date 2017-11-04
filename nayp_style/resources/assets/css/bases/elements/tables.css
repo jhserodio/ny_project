@@ -1,0 +1,107 @@
+/*=========================================================================
+01/G - TABLES
+=========================================================================*/
+
+table {
+  width           : 100%;
+  border-collapse : collapse;
+  border-spacing  : 0;
+}
+
+thead {
+  vertical-align : middle;
+}
+
+thead tr {
+  border: none;
+}
+
+tfoot {
+  vertical-align : middle;
+}
+
+tbody {
+  vertical-align : middle;
+}
+
+td {
+  text-align     : center;;
+  text-transform : uppercase;
+  font-size      : var(--size-small);
+  padding        : var(--space-large);
+  color          : var(--smoke-white);
+  font-weight    : normal;
+  border         : none;
+}
+
+td:first-child {
+  text-align: left;
+}
+
+th {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: var(--size-small);
+  line-height: normal;
+  font-weight: normal;
+  padding-bottom: var(--space-base);
+  border: 0;
+}
+
+th:first-child {
+  text-align: left;
+}
+
+th small {
+  text-transform: lowercase;
+}
+
+tr {
+  border : var(--border-focus);
+}
+
+tr._title {
+  font-size: var(--size-base);
+}
+
+tr small {
+  text-transform: lowercase;
+  font-size: var(--size-base);
+}
+
+
+tbody tr:hover,
+tbody tr:hover td {
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+
+tbody tr._title:hover,
+tbody tr._title:hover td {
+  background: none;
+  color: black;
+  cursor: default;
+}
+
+
+@media (--screen-medium) {
+  td:first-child {
+    min-width: 200px;
+  }
+}
+
+@media (--screen-small) {
+
+  th {
+    font-size: var(--size-min);
+    padding: var(--space-base) 0;
+    line-height: normal;
+  }
+
+  td {
+    font-size: var(--size-min);
+    padding: var(--space-base);
+  }
+
+}

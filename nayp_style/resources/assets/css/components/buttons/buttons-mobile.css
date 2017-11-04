@@ -1,0 +1,5 @@
+@media (--screen-mobile) {
+  .btn-seller {
+    margin: 0;
+  }
+}

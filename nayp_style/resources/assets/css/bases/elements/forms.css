@@ -1,0 +1,70 @@
+/*===============================================================
+01/F - FORMS
+===============================================================*/
+
+fieldset {
+  background: none;
+  border: var(--border-form);
+  outline: 0;
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  display: block;
+  color: var(--color-base);
+  font-size: var(--size-title);
+  font-weight: bold;
+  padding: 0 var(--space-large);
+  text-align: left;
+}
+
+label {
+  text-transform: uppercase;
+  display: block;
+  color: var(--color-base);
+  margin: var(--space-small) 0;
+  font-size: var(--size-min);
+  font-weight: normal;
+  text-align: left;
+}
+
+:--forms-txt {
+  text-transform: uppercase;
+  background: none;
+  border: var(--border-form);
+  border-radius: var(--radius-base);
+  box-shadow: none;
+  box-sizing: border-box;
+  color: white;
+  padding: calc(var(--space-base)/2) var(--space-base);
+  font-size: var(--size-min);
+  margin: calc(var(--space-base)/2) 0;
+  transition: var(--transition-base);
+}
+
+:--forms-txt:--over {
+  box-shadow: none;
+  outline: none;
+}
+
+input[type="file"] {
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+select option {
+  color: black;
+}
+
+textarea {
+  resize: vertical;
+  height: 120px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline;
+  margin-right: calc(var(--space-base)/2);
+  background: black;
+}

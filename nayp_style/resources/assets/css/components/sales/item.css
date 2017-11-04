@@ -1,0 +1,23 @@
+.sale {
+  lost-center: 100%;
+}
+
+.sale-image {
+  border: var(--border-base);
+  width: 100%;
+  background: white;
+}
+
+.sale-descript {
+  font-size: var(--size-small);
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+  margin-top: var(--space-base);
+}
+
+.sale-name,
+.sale-price {
+  font-size: var(--size-small);
+  color: white;
+}

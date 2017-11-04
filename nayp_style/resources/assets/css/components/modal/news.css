@@ -1,0 +1,14 @@
+.modal-newsletter {
+  height: 300px;
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.modal-newsletter p {
+  font-size: var(--size-small);
+  text-transform: uppercase;
+}

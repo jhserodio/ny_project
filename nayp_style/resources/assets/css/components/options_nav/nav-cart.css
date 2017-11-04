@@ -1,0 +1,14 @@
+.nav-cart {
+  display     : inline-block;
+  width       : auto;
+  float       : right;
+  line-height : normal;
+}
+
+.nav-cart .btn-icon {
+  color: white;
+}
+
+.nav-cart .btn-icon:hover {
+  color: var(--gray-light);
+}

@@ -1,0 +1,93 @@
+
+.size_model ._marker {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 24px;
+  width: 24px;
+  font-size: var(--size-small);
+  text-transform: uppercase;
+  border-radius: 50%;
+  border: var(--border-focus);
+  background: var(--gray-nude);
+  cursor: pointer;
+}
+
+/* MAN TOP POINT MARKERS*/
+.size_model ._top-masc ._a {
+  left: 165px;
+  top: 182px;
+}
+.size_model ._top-masc ._b {
+  left: 132px;
+  top: 218px;
+}
+.size_model ._top-masc ._c {
+  left: 267px;
+  top: 218px;
+}
+/* MAN BOTTOM POINT MARKERS*/
+.size_model ._bottom-masc ._a {
+  left: 167px;
+  top: 32px;
+}
+.size_model ._bottom-masc ._b {
+  left: 167px;
+  top: 170px;
+}
+
+/* WOMAN TOP POINT MARKERS*/
+.size_model ._top-fem ._a {
+  left: 168px;
+  top: 187px;
+}
+.size_model ._top-fem ._b {
+  left: 138px;
+  top: 218px;
+}
+.size_model ._top-fem ._c {
+  left: 254px;
+  top: 218px;
+}
+/* MAN BOTTOM POINT MARKERS*/
+.size_model ._bottom-fem ._a {
+  left: 167px;
+  top: 87px;
+}
+.size_model ._bottom-fem ._b {
+  left: 167px;
+  top: 190px;
+}
+
+.size_model li:hover,
+.size_model li:hover p,
+.size_model li:hover strong,
+.size_model li:hover ._marker {
+  background: black;
+  color: white;
+}
+
+@media (--screen-smalloff) {
+  .size_model ._menu li:first-child {
+    border-top: 0;
+  }
+}
+
+@media (--screen-small) {
+
+  /* MAN TOP POINT MARKERS*/
+  .size_model ._top-masc ._a {
+    left: 128px;
+    top: 162px;
+  }
+  .size_model ._top-masc ._b {
+    left: 90px;
+    top: 200px;
+  }
+  .size_model ._top-masc ._c {
+    left: 222px;
+    top: 200px;
+  }
+
+}

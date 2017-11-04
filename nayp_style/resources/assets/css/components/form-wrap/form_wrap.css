@@ -1,0 +1,78 @@
+
+.form-wrap {
+  width: auto;
+  display: inline-block;
+}
+
+.form-wrap input {
+  border: none;
+  width: 90%;
+}
+
+.form-wrap button {
+  width: 5%;
+  box-sizing: border-box;
+  display: inline-block;
+}
+
+.form-wrap .form_inline {
+  border: var(--border-form);
+  width: 360px;
+  box-sizing: border-box;
+}
+
+.form-wrap .btn-icon {
+  color: white;
+}
+
+/*frete*/
+
+.form-frete {
+  padding: calc(var(--space-base)*2);
+}
+
+.form-frete .form_control {
+  margin: var(--space-base) 0;
+}
+
+.form-frete input,
+.form-frete label,
+.form-frete select {
+  border-color: black;
+  color: black;
+}
+
+.form-frete button {
+  margin-top: calc(var(--space-large)*2);
+  font-size: var(--size-min);
+}
+
+.form-radio {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.form-radio * {
+  font-size: var(--size-small);
+}
+
+.form-radio small {
+  display: block;
+}
+
+.radio-control {
+  padding-bottom: 3px;
+}
+
+.radio-control input {
+  transform: translateY(3px);
+}
+
+
+@media (--screen-small) {
+
+  .form-wrap .form_inline {
+    width: 100%;
+  }
+}

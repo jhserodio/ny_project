@@ -1,0 +1,41 @@
+
+.banner {
+  height: auto;
+  line-height: 0;
+  min-width: 100%;
+  width: 100%;
+  margin: 0;
+  background: var(--gray-base);
+  position: relative;
+}
+
+/*navegação inferior*/
+
+.slide-navegation {
+  list-style: none;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: auto;
+  width: 100%;
+  padding: 0 0 6% 6%;
+  text-align: center;
+  display: flex;
+}
+
+.slide-navegation li {
+  width: 10px;
+  height: 10px;
+  margin-right: calc(var(--space-large)*2);
+}
+
+.slide-navegation li._active a {
+  background: white;
+}
+
+.slide-navegation a {
+  width: 100%;
+  height: 100%;
+  border: 1px solid white;
+  display: block;
+}

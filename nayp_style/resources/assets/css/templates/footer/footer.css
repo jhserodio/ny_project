@@ -1,0 +1,139 @@
+
+.footer-np {
+  border-top: var(--border-base);
+}
+
+.footer-np > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-right > * {
+  display: inline-block;
+  width: auto;
+  margin-left: calc(var(--space-base)*2);
+}
+
+/*Footer Info*/
+.info-footer {
+  width: auto;
+  height: auto;
+}
+
+.info-footer .propover {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateX(-70px);
+  width: 200px;
+  margin-bottom: 45px;
+}
+
+.info-footer .propover.active {
+  display: block;
+}
+
+.info-footer .propover::after {
+  top           : inherit;
+  bottom        : 0;
+  margin-bottom : -15px;
+  border-top    : 7px solid white;
+  border-bottom : 7px solid transparent;
+}
+
+.info-footer ul {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: var(--size-min);
+}
+
+.info-footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-right svg {
+  fill: var(--gray-light);
+}
+
+@media (--screen-medium) {
+  .info-footer {
+    position: relative;
+  }
+}
+
+@media (--screen-tablet) {
+  .footer-np .social-list {
+    margin-top: 22px;
+  }
+}
+
+@media (--screen-mobile) {
+
+  .footer-np {
+    position: relative;
+  }
+
+  .footer-np > div {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .footer-left,
+  .footer-left .form-wrap {
+    width: 100%;
+  }
+
+  .footer-left .form-wrap .form_inline {
+    margin-bottom: 0;
+  }
+
+  .footer-left .social-list {
+    margin: var(--space-base) 0;
+  }
+
+  .footer-right {
+    margin: var(--space-base) 0;
+  }
+
+  .footer-right > * {
+    display: inline-block;
+    width: auto;
+    margin-left: 0;
+  }
+
+  .footer-right .social-list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: var(--space-base) 0;
+  }
+
+  .footer-right,
+  .footer-right .info-footer {
+    width: 100%;
+  }
+  .footer-right button {
+    margin: var(--space-base) 0;
+    width: 100%;
+  }
+
+  .footer-right address {
+    margin: var(--space-base) 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  /*menu info footer*/
+  .info-footer .propover {
+    width: 100%;
+    transform: translateX(0);
+    margin-bottom: 147px;
+    bottom: 0;
+  }
+
+  .info-footer .propover::after {
+    content: none;
+  }
+}

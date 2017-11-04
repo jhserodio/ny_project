@@ -1,0 +1,16 @@
+.modal-content {
+  box-sizing: border-box;
+  background: black;
+  border: 5px solid white;
+  min-width: 280px;
+  min-height: 280px;
+  position: relative;
+  padding: calc(var(--space-base)*2);
+}
+
+.modal-close {
+  position: absolute;
+  right: var(--space-base);
+  top: var(--space-base);
+  color: white;
+}

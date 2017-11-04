@@ -1,0 +1,31 @@
+/*navegação lateral*/
+
+.side-nav-prev,
+.side-nav-next {
+  position: absolute;
+  left: 6%;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: calc(var(--space-base)/2) 0;
+  border: var(--border-base);
+  width: 80px;
+  text-align: center;
+  font-size: var(--size-small);
+  transition: var(--transition-base);
+}
+
+.side-nav-prev svg,
+.side-nav-next svg {
+  display: block;
+  width: 10px;
+}
+
+.side-nav-prev {
+  top: 220px;
+}
+
+.side-nav-next {
+  top: 260px;
+}

@@ -1,0 +1,164 @@
+<div class="banner">
+  <div id="np-home-slide-gallery" class="slide-gallery">
+    <div class="slide-item _active">
+      <div class="slide-info">
+        <h2>
+          titulo do slide 1
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Quisque feugiat lacus a ipsum tristique tincidunt.
+          Donec mollis finibus velit ac pellentesque.
+        </p>
+      </div>
+      <div class="flex-image">
+        <img srcset="{{'home-01.jpg' | asset_url}}, {{'home-mobile-01.jpg' | asset_url}} 768w"
+             alt="imagem">
+      </div>
+    </div>
+    <div class="slide-item">
+      <div class="slide-info">
+        <h2>
+          titulo do slide 2
+        </h2>
+        <p>
+          Curabitur efficitur quam lacus, in tincidunt neque vulputate ac.
+          Praesent in tortor in libero bibendum faucibus.
+          Proin efficitur nulla quis lorem interdum, eget congue arcu fermentum.
+        </p>
+      </div>
+      <div class="flex-image">
+        <img srcset="{{'home-02.jpg' | asset_url}}, {{'home-mobile-02.jpg' | asset_url}} 768w"
+             alt="imagem">
+      </div>
+    </div>
+    <div class="slide-item">
+      <div class="slide-info">
+        <h2>
+          titulo do slide 3
+        </h2>
+        <p>
+          Duis ac tincidunt nisi. Donec vitae mollis arcu.
+          Proin maximus, ex et venenatis ornare, nunc mi accumsan lectus,
+          id vulputate ante turpis eu orci.
+        </p>
+      </div>
+      <div class="flex-image">
+        <img srcset="{{'home-02.jpg' | asset_url}}, {{'home-mobile-02.jpg' | asset_url}} 768w"
+             alt="imagem">
+      </div>
+    </div>
+  </div>
+
+  <ul id="np-home-slide-navegation" class="slide-navegation">
+    <li class="_active"><a href="#"></a></li>
+    <li><a href="#"></a></li>
+    <li><a href="#"></a></li>
+  </ul>
+</div>
+
+{% schema %}
+  {
+    "name": "Image with text overlay",
+    "class": "index-section index-section--flush",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+      },
+      {
+        "type": "select",
+        "id": "alignment",
+        "label": "Image alignment",
+        "default": "center",
+        "options": [
+          {
+            "value": "top",
+            "label": "Top"
+          },
+          {
+            "value": "center",
+            "label": "Middle"
+          },
+          {
+            "value": "bottom",
+            "label": "Bottom"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "Image with text overlay"
+      },
+      {
+        "type": "richtext",
+        "id": "text",
+        "label": "Text",
+        "default": "<p>Use overlay text to give your customers insight into your brand. Select imagery and text that relates to your style and story.</p>"
+      },
+      {
+        "type": "select",
+        "id": "hero_size",
+        "label": "Section height",
+        "default": "medium",
+        "options": [
+          {
+            "label": "Extra Small",
+            "value": "x-small"
+          },
+          {
+            "label": "Small",
+            "value": "small"
+          },
+          {
+            "label": "Medium",
+            "value": "medium"
+          },
+          {
+            "label": "Large",
+            "value": "large"
+          },
+          {
+            "label": "Extra Large",
+            "value": "x-large"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "text_size",
+        "label": "Text size",
+        "default": "medium",
+        "options": [
+          {
+            "label": "Medium",
+            "value": "medium"
+          },
+          {
+            "label": "Large",
+            "value": "large"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "id": "button_label",
+        "label": "Button label"
+      },
+      {
+        "type": "url",
+        "id": "button_link",
+        "label": "Button link"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Image with text overlay",
+        "category": "Image"
+      }
+    ]
+  }
+{% endschema %}

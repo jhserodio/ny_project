@@ -1,0 +1,26 @@
+.category-np {
+  margin: calc(var(--space-large)*4) 0;
+  lost-center: 100%;
+}
+
+.category-head {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-start;
+}
+
+.bread-crumb {
+  text-transform: uppercase;
+  font-size: var(--size-min);
+}
+
+@media (--screen-small) {
+  .category-np {
+    margin-top: calc(var(--space-large)*2);
+  }
+}
+
+/*@media (--screen-small) {
+  .category-np {
+    margin-top: calc(var(--space-large)*2);
+}*/

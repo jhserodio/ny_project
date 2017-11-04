@@ -1,0 +1,27 @@
+/*=========================================================================
+02/F - MENU
+=========================================================================*/
+
+.social-list {
+  display: inline-block;
+  margin: 5px var(--space-base) 5px 0;
+  font-size: var(--size-small);
+}
+
+.social-list li {
+  margin: 0 var(--space-base);
+}
+
+.social-list li:first-child {
+  margin-left: 0;
+}
+
+.social-list li:last-child {
+  margin-right: 0;
+}
+
+.social-list a {
+  color: var(--gray-base);
+  display: block;
+  transform: translateY(3px);
+}

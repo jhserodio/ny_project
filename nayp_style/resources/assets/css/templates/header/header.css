@@ -1,0 +1,88 @@
+/*=========================================================================
+05/B - HEADER
+=========================================================================*/
+
+.header-np {
+  width: 100%;
+  position: relative;
+  z-index: 99999;
+  padding: calc(var(--space-base)*2) 0;
+  border-bottom: 1px solid white;
+}
+
+.header-np .container {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.header-navegation {
+  flex-grow: 2;
+}
+
+.header-info {
+  height: 50px;
+  width: 140px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+.header-info .menu,
+.header-info a {
+  font-size      : var(--size-min);
+  font-weight    : var(--weight-bold);
+  text-transform : uppercase;
+  text-align     : right;
+}
+
+.search-box {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.search-box .form_inline {
+  border: var(--border-focus);
+  margin: var(--space-base) 0;
+  color: black;
+}
+
+.search-box input {
+  width: 88%;
+}
+
+.search-box button.btn-icon {
+  color: black;
+  display: inline-block;
+}
+
+@media (--screen-smalloff) {
+  .header-np .logo-np {
+    padding-right: 95px;
+  }
+}
+
+@media (--screen-small) {
+
+  .header-np .container {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .header-np .header-info,
+  .header-np .logo-np {
+    width: 50%;
+  }
+
+  .header-navegation {
+    order: 1;
+    margin-right: 0;
+  }
+
+  .search-box .form-wrap {
+    width: 88%;
+    margin: 0 6%;
+  }
+
+}

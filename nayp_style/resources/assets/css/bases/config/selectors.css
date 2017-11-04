@@ -1,0 +1,30 @@
+
+  /*ICONS*/
+  @custom-selector :--icons [class^="icon-"], [class*=" icon-"];
+
+  /*TEXT ELEMENTS*/
+
+  /*heading*/
+  @custom-selector :--heading h1, h2, h3, h4, h5, h6;
+
+  /*bolders*/
+  @custom-selector :--bold strong, b;
+
+  /*lists*/
+  @custom-selector :--list ul, ol;
+
+
+  /*FORM ELEMENTS*/
+  @custom-selector :--forms-txt input[type="text"], input[type="password"], input[type="email"],
+                                input[type="number"], input[type="tel"], input[type="search"], textarea, select;
+
+  /*TEMPLATE ELEMENTS*/
+  @custom-selector :--block article,  aside,  details,  figcaption,  figure,  footer,  header,  hgroup,
+                            main, menu,  nav,  section,  summary;
+
+  /*BUTTONS*/
+
+  @custom-selector :--btn button,  input[type="button"],  input[type="reset"],  input[type="submit"], .btn;
+
+  /*MOUSE OVER*/
+  @custom-selector :--over :focus, :hover, :active;
